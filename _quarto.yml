@@ -1,0 +1,37 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Nyckolas Styvie — Pesquisa & Estatística"
+  site-url: https://nyckolasjesus.github.io/portfolio/
+  description: "Portfólio acadêmico de Nyckolas Styvie Souza Jesus — Estatística, pesquisa, dados e epistemologia."
+  navbar:
+    left:
+      - href: index.html
+        text: Início
+      - href: research/index.html
+        text: Pesquisa
+      - href: projects/index.html
+        text: Projetos
+      - href: publications/index.html
+        text: Publicações
+      - href: blog.html
+        text: Blog
+    right:
+      - icon: github
+        href: https://github.com/nyckolasjesus
+
+format:
+  html:
+    theme:
+      light: [litera, blog.scss]
+    css: blog.scss
+    toc: true
+    code-fold: true
+    code-tools: true
+    highlight-style: github
+
+execute:
+  warning: false
+  message: false

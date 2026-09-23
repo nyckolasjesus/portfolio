@@ -1,0 +1,22 @@
+[
+    {
+        "_comment": "Artigo 1",
+        "year": 2025,
+        "title": "Título 1",
+        "authors": "Jesus, N. S. S.",
+        "venue": "Evento 1",
+        "type": "Resumo",
+        "description": "Descrição.",
+        "url": ""
+    },
+    {
+        "_comment": "Artigo 2",
+        "year": 2025,
+        "title": "Título 2",
+        "authors": "Jesus, N. S. S.",
+        "venue": "Evento 2",
+        "type": "Resumo",
+        "description": "Descrição.",
+        "url": ""
+    }
+]

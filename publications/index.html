@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Produção acadêmica completa de Nyckolas Styvie Souza Jesus.">
+    <meta name="author" content="Nyckolas Styvie Souza Jesus">
+    <title>Publicações — Nyckolas Styvie</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/responsive.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="../index.html" class="logo">Nyckolas Styvie</a>
+
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" id="mobile-menu-btn">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="../index.html#sobre">Sobre</a></li>
+                <li><a href="../research/">Pesquisa</a></li>
+                <li><a href="../projects/">Projetos</a></li>
+                <li><a href="./">Publicações</a></li>
+                <li><a href="../blog/">Blog</a></li>
+                <li><a href="../index.html#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="breadcrumb"><a href="../index.html">Início</a> / Publicações</p>
+                <p class="eyebrow">Produção científica</p>
+                <h1>Publicações</h1>
+                <p>
+                    Artigos, resumos expandidos, notas técnicas e apresentações em
+                    congressos.
+                </p>
+            </div>
+        </section>
+
+        <section class="section section-alt" style="padding-top: 3rem;">
+            <div class="container">
+                <div id="publications-container" class="pub-list" data-base="../"></div>
+
+                <div class="section-action">
+                    <a href="https://scholar.google.com/" class="text-link" target="_blank" rel="noopener">
+                        Ver também no Google Scholar →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Nyckolas Styvie Souza Jesus.</p>
+            <p>Pesquisa aberta · Dados · Código</p>
+        </div>
+    </footer>
+
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/publications.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/*-- scss:defaults --*/
+$primary: #1E3A8A;
+$body-color: #333333;
+$link-color: #1E3A8A;
+
+/*-- scss:rules --*/
+.navbar {
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.quarto-title-block .quarto-title-banner {
+  background-color: #F1F5F9;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}

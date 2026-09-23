@@ -1,0 +1,17 @@
+---
+title: "Blog"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  fields: [date, title, description, categories, reading-time]
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  page-size: 10
+page-layout: full
+title-block-banner: false
+---
+
+Notas de pesquisa, análises reproduzíveis e experimentos em R.
+Cada post é um documento Quarto (R Markdown) com código executável.

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio acadêmico de Nyckolas Styvie Souza Jesus — Estatística, pesquisa, dados e epistemologia.">
+    <meta name="author" content="Nyckolas Styvie Souza Jesus">
+    <title>Nyckolas Styvie — Pesquisa & Estatística</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="#inicio" class="logo">Nyckolas Styvie</a>
+
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" id="mobile-menu-btn">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#pesquisa">Pesquisa</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#publicacoes">Publicações</a></li>
+                <li><a href="#dados">Dados &amp; Código</a></li>
+                <li><a href="blog/">Blog</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <p class="eyebrow">Estatística · Pesquisa · Dados</p>
+                <h1>Nyckolas Styvie<br>Souza Jesus</h1>
+                <p class="hero-desc">
+                    Graduando em Estatística na Universidade Estadual de Maringá (UEM).
+                    Explorando a interseção entre métodos quantitativos, inferência,
+                    ciência de dados e a epistemologia da produção do conhecimento.
+                </p>
+                <div class="hero-links">
+                    <a href="research/" class="btn btn-primary">Áreas de Pesquisa</a>
+                    <a href="#projetos" class="btn btn-secondary">Ver Projetos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section id="sobre" class="section section-alt">
+            <div class="container">
+                <h2>Sobre Mim</h2>
+
+                <div class="about-grid">
+                    <div>
+                        <p class="lead">
+                            Sou estudante do bacharelado em Estatística na Universidade
+                            Estadual de Maringá (UEM). Minha trajetória acadêmica é guiada
+                            pela paixão em extrair significado do ruído através de dados.
+                        </p>
+                        <p>
+                            Acredito que a Estatística vai além dos números; é a ciência de
+                            aprender com os dados frente à incerteza. Minha formação foca em
+                            modelagem estatística robusta, programação voltada para ciência de
+                            dados e um forte embasamento em como validamos o conhecimento
+                            obtido (epistemologia).
+                        </p>
+                        <p>
+                            Atualmente, busco oportunidades de iniciação científica e projetos
+                            colaborativos que apliquem inferência estatística a problemas
+                            complexos do mundo real.
+                        </p>
+                    </div>
+
+                    <aside class="academic-facts">
+                        <div>
+                            <span>Formação</span>
+                            <strong>Estatística (Graduação)</strong>
+                            <p style="font-size: 0.85rem; margin-top:0.25rem;">Universidade Estadual de Maringá — UEM</p>
+                        </div>
+                        <div>
+                            <span>Foco de Estudo</span>
+                            <strong>Modelagem e Inferência</strong>
+                        </div>
+                        <div>
+                            <span>Ferramentas</span>
+                            <strong>R, Python, SQL, LaTeX</strong>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- PESQUISA -->
+        <section id="pesquisa" class="section">
+            <div class="container">
+                <h2>Áreas de Pesquisa</h2>
+
+                <div class="grid-cards">
+                    <article class="card">
+                        <span class="card-tag">Métodos Quanti</span>
+                        <h3>Inferência Estatística</h3>
+                        <p>
+                            Estudo de estimadores, testes de hipóteses e modelagem
+                            probabilística para compreensão de fenômenos complexos a
+                            partir de amostras limitadas.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span class="card-tag">Filosofia da Ciência</span>
+                        <h3>Epistemologia</h3>
+                        <p>
+                            Investigação crítica sobre as bases lógicas da estatística,
+                            interpretação de p-valores, abordagens frequentistas vs
+                            bayesianas e crise de reprodutibilidade.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span class="card-tag">Computação</span>
+                        <h3>Ciência de Dados</h3>
+                        <p>
+                            Aplicação de algoritmos de aprendizado de máquina, mineração de
+                            dados e visualização computacional para extração de insights em
+                            grandes bases.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="section-action">
+                    <a href="research/" class="text-link">Ver página completa de pesquisa →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section id="projetos" class="section section-alt">
+            <div class="container">
+                <h2>Projetos em Destaque</h2>
+
+                <div id="projects-container" class="grid-cards" data-limit="3"></div>
+
+                <div class="section-action">
+                    <a href="projects/" class="text-link">Ver todos os projetos →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PUBLICAÇÕES -->
+        <section id="publicacoes" class="section">
+            <div class="container">
+                <h2>Produção Acadêmica</h2>
+                <p>Ensaios, notas técnicas e participações em congressos.</p>
+
+                <div id="publications-container" class="pub-list" data-limit="5"></div>
+
+                <div class="section-action">
+                    <a href="publications/" class="text-link">Ver produção completa →</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- BLOG -->
+        <section id="blog" class="section section-alt">
+            <div class="container">
+                <h2>Blog</h2>
+                <p>Notas de estudo, ensaios curtos e explorações de métodos estatísticos.</p>
+
+                <div id="blog-container" class="post-list" data-limit="3"></div>
+
+                <div class="section-action">
+                    <a href="blog/" class="text-link">Ver todos os posts →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DADOS & CÓDIGO -->
+        <section id="dados" class="section section-alt">
+            <div class="container">
+                <h2>Dados &amp; Código</h2>
+                <p>Recursos externos ligados à minha produção acadêmica.</p>
+
+                <div class="code-grid">
+                    <a href="https://github.com/" class="card" target="_blank" rel="noopener">
+                        <span class="card-tag">GitHub</span>
+                        <h3>Código</h3>
+                        <p>
+                            Scripts, análises estatísticas, notebooks e projetos
+                            computacionais.
+                        </p>
+                    </a>
+
+                    <a href="https://orcid.org/" class="card" target="_blank" rel="noopener">
+                        <span class="card-tag">ORCID</span>
+                        <h3>Identidade acadêmica</h3>
+                        <p>
+                            Identificador persistente para produção científica.
+                        </p>
+                    </a>
+
+                    <a href="https://zenodo.org/" class="card" target="_blank" rel="noopener">
+                        <span class="card-tag">Zenodo</span>
+                        <h3>Dados &amp; materiais</h3>
+                        <p>
+                            Datasets, materiais suplementares e versões arquivadas
+                            de projetos.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV -->
+        <section class="section">
+            <div class="container cv-section">
+                <div>
+                    <p class="eyebrow">Currículo</p>
+                    <h2>CV</h2>
+                    <p>
+                        Formação acadêmica, projetos, experiências e produção
+                        científica consolidadas em um único documento.
+                    </p>
+                </div>
+                <a href="src/documents/cv.pdf" class="btn btn-primary" target="_blank">Abrir CV</a>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="section section-alt">
+            <div class="container">
+                <h2>Contato &amp; Links</h2>
+                <p>Aberto para discussões acadêmicas, parcerias em ciência de dados ou oportunidades de pesquisa.</p>
+
+                <div class="contact-links">
+                    <a href="mailto:SEU_EMAIL_AQUI">Email</a>
+                    <a href="https://lattes.cnpq.br/" target="_blank" rel="noopener">Currículo Lattes</a>
+                    <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://orcid.org/" target="_blank" rel="noopener">ORCID</a>
+                    <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Nyckolas Styvie Souza Jesus.</p>
+            <p>Pesquisa aberta · Dados · Código</p>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+    <script src="src/js/projects.js"></script>
+    <script src="src/js/publications.js"></script>
+    <script src="src/js/blog.js"></script>
+</body>
+</html>

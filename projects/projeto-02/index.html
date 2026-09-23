@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Classificação supervisionada no Banco de Preços em Saúde (BPS) — previsão de medicamentos genéricos.">
+    <meta name="author" content="Nyckolas Styvie Souza Jesus">
+    <title>Classificação Supervisionada no BPS — Projeto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../src/css/style.css">
+    <link rel="stylesheet" href="../../src/css/responsive.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="../../index.html" class="logo">Nyckolas Styvie</a>
+
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" id="mobile-menu-btn">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="../../index.html#sobre">Sobre</a></li>
+                <li><a href="../../research/">Pesquisa</a></li>
+                <li><a href="../">Projetos</a></li>
+                <li><a href="../../publications/">Publicações</a></li>
+                <li><a href="../../blog/">Blog</a></li>
+                <li><a href="../../index.html#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="breadcrumb">
+                    <a href="../../index.html">Início</a> /
+                    <a href="../">Projetos</a> /
+                    Classificação no BPS
+                </p>
+                <h1>Classificação Supervisionada no Banco de Preços em Saúde (BPS)</h1>
+                <p>
+                    <span class="card-tag">Machine Learning</span>
+                    <span class="card-tag">R</span>
+                </p>
+                <p>
+                    <strong>Status:</strong> Em andamento · <strong>Ano:</strong> 2026
+                </p>
+            </div>
+        </section>
+
+        <section class="section section-alt" style="padding-top: 3rem;">
+            <div class="container project-detail">
+
+                <h3>Pergunta de pesquisa</h3>
+                <p>
+                    É possível prever, a partir das características de uma aquisição
+                    registrada no Banco de Preços em Saúde (BPS), se o medicamento
+                    comprado é um medicamento genérico?
+                </p>
+
+                <h3>Contexto</h3>
+                <p>
+                    Este estudo analisa dados de aquisições de medicamentos no Brasil
+                    registradas no Banco de Preços em Saúde (BPS), banco mantido pelo
+                    Ministério da Saúde. O objetivo é construir e avaliar modelos de
+                    aprendizado de máquina supervisionado para prever se uma compra de
+                    medicamento refere-se a um item genérico.
+                </p>
+                <p>
+                    A distinção entre medicamentos genéricos e de referência tem
+                    implicações diretas para a gestão de compras públicas de saúde,
+                    especialmente para a definição de preços de referência e a
+                    avaliação da política nacional de medicamentos genéricos no SUS.
+                </p>
+
+                <h3>Dados</h3>
+                <p>
+                    Os dados são obtidos no BPS, que reúne informações de preços e
+                    quantidades efetivamente pagas nas aquisições de medicamentos,
+                    materiais e equipamentos realizadas pelos órgãos públicos de saúde.
+                </p>
+                <p>
+                    Variáveis consideradas: descrição do item adquirido, preço unitário,
+                    quantidade comprada, unidade de medida, órgão comprador, município e
+                    UF. A rotulação do alvo (genérico vs. não genérico) é derivada da
+                    descrição textual do item.
+                </p>
+
+                <h3>Métodos</h3>
+                <p>
+                    Abordagem de classificação binária supervisionada desenvolvida em R:
+                </p>
+                <p>
+                    &bull; Regressão logística como modelo baseline interpretável;<br>
+                    &bull; Random Forest para capturar relações não lineares entre as
+                    covariáveis;<br>
+                    &bull; Engenharia de atributos a partir da descrição textual dos itens;<br>
+                    &bull; Validação cruzada para estimativa honesta do desempenho;<br>
+                    &bull; Métricas de avaliação: acurácia, precisão, recall, F1-score
+                    e curva ROC (AUC).
+                </p>
+
+                <h3>Resultados</h3>
+                <p>
+                    Em andamento. Os resultados serão apresentados aqui em forma de
+                    tabelas de desempenho comparativo entre os modelos e gráficos de
+                    importância das variáveis.
+                </p>
+
+                <h3>Limitações</h3>
+                <p>
+                    A qualidade da classificação depende diretamente da consistência
+                    das descrições textuais registradas no BPS, que são inseridas
+                    livremente pelos órgãos compradores. Possível desbalanceamento
+                    entre as classes (genérico vs. não genérico) também exige atenção
+                    na escolha das métricas.
+                </p>
+
+                <h3>Próximos passos</h3>
+                <p>
+                    Ajuste de hiperparâmetros, comparação com outros classificadores
+                    (XGBoost, SVM), análise de erro por UF e por tipo de órgão
+                    comprador, e eventual submissão a evento científico.
+                </p>
+
+                <a href="https://github.com/" class="btn btn-primary" target="_blank" rel="noopener">Ver código no GitHub</a>
+                <a href="../" class="btn btn-secondary">Voltar aos projetos</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Nyckolas Styvie Souza Jesus.</p>
+            <p>Pesquisa aberta · Dados · Código</p>
+        </div>
+    </footer>
+
+    <script src="../../src/js/main.js"></script>
+</body>
+</html>

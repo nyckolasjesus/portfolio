@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.75rem; }
+    .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .cv-section { flex-direction: column; align-items: flex-start; }
+    .section { padding: 4rem 0; }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(249, 249, 249, 0.98);
+        flex-direction: column;
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    .nav-links.active { display: flex; }
+    .menu-toggle { display: block; }
+}

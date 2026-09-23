@@ -1,0 +1,42 @@
+---
+title: "Bem-vindo ao blog"
+description: "Por que um blog de pesquisa em Estatística, e como os posts são feitos."
+date: "2026-09-23"
+categories: [meta, quarto]
+---
+
+Este é o primeiro post do blog. A ideia é usar este espaço como um
+**caderno público de pesquisa**: análises reproduzíveis, experimentos
+com métodos estatísticos e notas sobre epistemologia da inferência.
+
+## Como os posts são feitos
+
+Cada post é um arquivo `index.qmd` dentro de uma pasta com a data e um
+slug descritivo:
+
+```text
+posts/
+└── 2026-09-23_bem-vindo/
+    └── index.qmd
+```
+
+O código R é executado localmente e o resultado é congelado com
+`freeze: true` — o site renderiza rápido sem precisar rodar as análises
+a cada build.
+
+## Um exemplo rápido
+
+```{r}
+#| label: fig-exemplo
+#| fig-cap: "Uma amostra de uma Normal(0,1)"
+
+set.seed(42)
+x <- rnorm(1000)
+hist(x, breaks = 30, col = "#1E3A8A", border = "white",
+     main = "", xlab = "x")
+```
+
+## Referências
+
+As referências ficam em `references.bib` na raiz do repositório e são
+citadas com `[@chave]`.

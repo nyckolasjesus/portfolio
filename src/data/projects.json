@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Estudo da Distribuição Dagum: Propriedades, Simulação Monte Carlo e Aplicação a Dados Reais",
+        "description": "Trabalho tem como objetivo realizar um estudo aprofundado da Distribuição Dagum, abordando suas propriedades teóricas e realizando uma Simulação de Monte Carlo para avaliar o desempenho dos estimadores de máxima verossimilhança.",
+        "status": "Concluído",
+        "year": 2026,
+        "tags": [
+            "Monte Carlo",
+            "R"
+        ],
+        "url": "projects/projeto-01/"
+    },
+    {
+        "title": "CLASSIFICAÇÃO SUPERVISIONADA NO BANCO DE PREÇOS EM SAÚDE (BPS)",
+        "description": "Este estudo analisa dados de aquisições de medicamentos no Brasil registradas no Banco de Preços em Saúde (BPS), banco mantido pelo Ministério da Saúde. Com objetivo de construir e avaliar modelos de aprendizado de máquina supervisionado para prever se uma compra de medicamento no BPS refere-se a um item genérico.",
+        "status": "Em andamento",
+        "year": 2026,
+        "tags": [
+            "Machine Learning",
+            "R"
+        ],
+        "url": "projects/projeto-02/"
+    }
+]

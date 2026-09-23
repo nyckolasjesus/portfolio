@@ -1,0 +1,33 @@
+# Herdado por todos os posts em posts/
+# https://quarto.org/docs/projects/profiles.html
+
+# Congela outputs computados: o código NÃO roda a cada render,
+# só roda quando você executa o post manualmente no RStudio.
+freeze: true
+
+# Bloco de título com banner
+title-block-banner: true
+
+# Licença
+license: "CC BY"
+
+# Sumário
+toc: true
+toc-title: "Sumário"
+toc-location: left
+
+# Execução padrão
+execute:
+  echo: true
+  message: false
+  warning: false
+
+# Autor padrão
+author:
+  - name: Nyckolas Styvie Souza Jesus
+    url: https://nyckolasjesus.github.io/portfolio/
+    affiliation: Universidade Estadual de Maringá
+    affiliation-url: https://uem.br
+
+# Citação
+citation: true

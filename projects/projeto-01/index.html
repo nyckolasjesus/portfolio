@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Análise espacial da dengue no Paraná — projeto de pesquisa.">
+    <meta name="author" content="Nyckolas Styvie Souza Jesus">
+    <title>Análise Espacial da Dengue no Paraná — Projeto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../src/css/style.css">
+    <link rel="stylesheet" href="../../src/css/responsive.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="../../index.html" class="logo">Nyckolas Styvie</a>
+
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" id="mobile-menu-btn">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="../../index.html#sobre">Sobre</a></li>
+                <li><a href="../../research/">Pesquisa</a></li>
+                <li><a href="../">Projetos</a></li>
+                <li><a href="../../publications/">Publicações</a></li>
+                <li><a href="../../blog/">Blog</a></li>
+                <li><a href="../../index.html#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="breadcrumb">
+                    <a href="../../index.html">Início</a> /
+                    <a href="../">Projetos</a> /
+                    Análise espacial da dengue
+                </p>
+                <h1>Análise Espacial da Dengue no Paraná</h1>
+                <p>
+                    <span class="card-tag">Modelagem espacial</span>
+                    <span class="card-tag">R</span>
+                    <span class="card-tag">INLA</span>
+                </p>
+                <p>
+                    <strong>Status:</strong> Em andamento · <strong>Ano:</strong> 2026
+                </p>
+            </div>
+        </section>
+
+        <section class="section section-alt" style="padding-top: 3rem;">
+            <div class="container project-detail">
+
+                <h3>Pergunta de pesquisa</h3>
+                <p>
+                    Como varia o risco relativo de surtos de dengue entre os municípios
+                    paranaenses, e de que forma covariáveis climáticas explicam essa variação?
+                </p>
+
+                <h3>Contexto</h3>
+                <p>
+                    Descreva aqui a motivação do projeto: relevância epidemiológica,
+                    revisão breve da literatura e posicionamento do trabalho.
+                </p>
+
+                <h3>Dados</h3>
+                <p>
+                    Fonte dos dados (SINAN, INMET etc.), período de observação,
+                    variáveis utilizadas e critérios de inclusão.
+                </p>
+
+                <h3>Métodos</h3>
+                <p>
+                    Modelos bayesianos espaciais ajustados via INLA, com efeitos
+                    espaciais condicionais autoregressivos (CAR) e covariáveis climáticas.
+                </p>
+
+                <h3>Resultados</h3>
+                <p>
+                    Inclua aqui os principais gráficos e tabelas (pasta <code>figures/</code>
+                    do repositório do projeto).
+                </p>
+
+                <h3>Limitações</h3>
+                <p>
+                    Registre honestamente as limitações: qualidade da notificação,
+                    sub-registro, agregação espacial etc.
+                </p>
+
+                <h3>Próximos passos</h3>
+                <p>
+                    Validação externa, inclusão de novas covariáveis, submissão a congresso.
+                </p>
+
+                <a href="https://github.com/" class="btn btn-primary" target="_blank" rel="noopener">Ver código no GitHub</a>
+                <a href="../" class="btn btn-secondary">Voltar aos projetos</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Nyckolas Styvie Souza Jesus.</p>
+            <p>Pesquisa aberta · Dados · Código</p>
+        </div>
+    </footer>
+
+    <script src="../../src/js/main.js"></script>
+</body>
+</html>
