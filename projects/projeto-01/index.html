@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Análise espacial da dengue no Paraná — projeto de pesquisa.">
+    <meta name="description" content="Estudo da Distribuição Dagum: propriedades, simulação Monte Carlo e aplicação a dados reais.">
     <meta name="author" content="Nyckolas Styvie Souza Jesus">
-    <title>Análise Espacial da Dengue no Paraná — Projeto</title>
+    <title>Estudo da Distribuição Dagum — Projeto</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,16 +41,15 @@
                 <p class="breadcrumb">
                     <a href="../../index.html">Início</a> /
                     <a href="../">Projetos</a> /
-                    Análise espacial da dengue
+                    Distribuição Dagum
                 </p>
-                <h1>Análise Espacial da Dengue no Paraná</h1>
+                <h1>Estudo da Distribuição Dagum: Propriedades, Simulação Monte Carlo e Aplicação a Dados Reais</h1>
                 <p>
-                    <span class="card-tag">Modelagem espacial</span>
+                    <span class="card-tag">Monte Carlo</span>
                     <span class="card-tag">R</span>
-                    <span class="card-tag">INLA</span>
                 </p>
                 <p>
-                    <strong>Status:</strong> Em andamento · <strong>Ano:</strong> 2026
+                    <strong>Status:</strong> Concluído · <strong>Ano:</strong> 2026
                 </p>
             </div>
         </section>
@@ -58,45 +57,76 @@
         <section class="section section-alt" style="padding-top: 3rem;">
             <div class="container project-detail">
 
-                <h3>Pergunta de pesquisa</h3>
+                <h3>Objetivo</h3>
                 <p>
-                    Como varia o risco relativo de surtos de dengue entre os municípios
-                    paranaenses, e de que forma covariáveis climáticas explicam essa variação?
+                    Realizar um estudo aprofundado da Distribuição Dagum, abordando suas
+                    propriedades teóricas e realizando uma Simulação de Monte Carlo para
+                    avaliar o desempenho dos estimadores de máxima verossimilhança.
                 </p>
 
                 <h3>Contexto</h3>
                 <p>
-                    Descreva aqui a motivação do projeto: relevância epidemiológica,
-                    revisão breve da literatura e posicionamento do trabalho.
+                    A distribuição Dagum, proposta por Camilo Dagum em 1977, é um modelo
+                    probabilístico flexível para variáveis contínuas positivas, comumente
+                    utilizado em economia para modelar distribuições de renda e em
+                    confiabilidade para tempos de falha. Sua função de densidade permite
+                    diferentes formas (unimodal, assimétrica à direita), sendo uma
+                    alternativa às distribuições log-normal e gama.
+                </p>
+                <p>
+                    Este trabalho foi desenvolvido como estudo dirigido na disciplina de
+                    Inferência Estatística, com foco na derivação analítica das
+                    propriedades e na avaliação empírica dos estimadores.
                 </p>
 
-                <h3>Dados</h3>
+                <h3>Propriedades teóricas</h3>
                 <p>
-                    Fonte dos dados (SINAN, INMET etc.), período de observação,
-                    variáveis utilizadas e critérios de inclusão.
+                    Foram derivadas e verificadas as seguintes propriedades da Dagum(a, p, q):
+                </p>
+                <p>
+                    &bull; Função de densidade e de distribuição acumulada;<br>
+                    &bull; Momentos (média, variância, assimetria, curtose) sob
+                    restrições nos parâmetros;<br>
+                    &bull; Função quantílica e gerador de números aleatórios por
+                    inversão;<br>
+                    &bull; Comportamento assintótico e moda da distribuição.
                 </p>
 
-                <h3>Métodos</h3>
+                <h3>Simulação Monte Carlo</h3>
                 <p>
-                    Modelos bayesianos espaciais ajustados via INLA, com efeitos
-                    espaciais condicionais autoregressivos (CAR) e covariáveis climáticas.
+                    Para avaliar o desempenho dos estimadores de máxima verossimilhança
+                    (EMV), foi conduzida uma simulação com 1000 réplicas sob diferentes
+                    combinações de tamanho amostral (n = 50, 100, 250, 500) e valores
+                    dos parâmetros.
+                </p>
+                <p>
+                    As métricas avaliadas foram:
+                </p>
+                <p>
+                    &bull; <strong>Viés</strong> — diferença entre a média das estimativas e o valor verdadeiro;<br>
+                    &bull; <strong>Erro quadrático médio (EQM)</strong> — mede a variabilidade e o viés conjuntamente;<br>
+                    &bull; <strong>Cobertura do intervalo de confiança</strong> — proporção de ICs de 95% que contêm o parâmetro verdadeiro.
                 </p>
 
                 <h3>Resultados</h3>
                 <p>
-                    Inclua aqui os principais gráficos e tabelas (pasta <code>figures/</code>
-                    do repositório do projeto).
+                    Os EMVs apresentaram viés decrescente com o aumento do tamanho
+                    amostral, conforme esperado pelas propriedades assintóticas. A
+                    cobertura dos intervalos de confiança aproximou-se do nível nominal
+                    de 95% para n ≥ 250. Gráficos de densidade das estimativas e tabelas
+                    de viés/EQM estão disponíveis no repositório do projeto.
                 </p>
 
-                <h3>Limitações</h3>
+                <h3>Aplicação a dados reais</h3>
                 <p>
-                    Registre honestamente as limitações: qualidade da notificação,
-                    sub-registro, agregação espacial etc.
+                    A distribuição foi ajustada a uma base de dados reais de renda
+                    utilizando o pacote <code>VGAM</code> do R, com comparação de
+                    ajuste via AIC e BIC contra os modelos log-normal e gama.
                 </p>
 
-                <h3>Próximos passos</h3>
+                <h3>Ferramentas</h3>
                 <p>
-                    Validação externa, inclusão de novas covariáveis, submissão a congresso.
+                    R (pacotes VGAM, ggplot2), R Markdown para relatório reproduzível.
                 </p>
 
                 <a href="https://github.com/" class="btn btn-primary" target="_blank" rel="noopener">Ver código no GitHub</a>
